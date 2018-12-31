@@ -1,0 +1,6 @@
+
+
+tar -C /usr/local -xzf go1.11.4.linux-amd64.tar.gz
+export JIRI_ROOT=/sdc/workplace/Fuchsia/test/build
+export PATH=$PATH:/usr/local/go/:/usr/local/go/bin/
+./download-jiri.sh
