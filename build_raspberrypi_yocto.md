@@ -24,3 +24,17 @@ bitbake rpi-basic-image
 
 
 ```
+```
+#### build SDK
+```
+bitbake rpi-basic-image -c populate_sdk
+```
+
+#### Add opencv lib
+
+```
+add conf/local.conf
+
+CORE_IMAGE_EXTRA_INSTALL += "libopencv-core-dev libopencv-highgui-dev libopencv-imgproc-dev libopencv-objdetect-dev libopencv-ml-dev"
+CORE_IMAGE_EXTRA_INSTALL += "opencv-apps opencv-dev python-modules"
+
